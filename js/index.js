@@ -1,10 +1,5 @@
 // Your code goes here
 
-// import TweenMax from "./node_modules/gsap/TweenMax";
-// import Draggable from "gsap/Draggable";
-// const TM = new TweenMax();
-// const Drg = new Draggable();
-
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -47,6 +42,8 @@ function showBox(ms, str) {
         if (str && str.length) box.textContent = str;
         body.appendChild(box);
         await sleep(ms);
+        TweenMax.to(box, 0.5, {opacity:0,left:'-50px'});
+        await sleep(500);
         body.removeChild(box);
     }
     boxTimer();
@@ -60,7 +57,7 @@ function showBox(ms, str) {
 });
 
 window.addEventListener('load', () => {
-    alert('Whole page has loaded!');
+    showBox(500, 'Page Loaded!');
 });
 
 window.addEventListener('resize', () => {

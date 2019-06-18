@@ -1,0 +1,25 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Example package",
+  "main": "index.js",
+  "scripts": {
+    "test": "myTest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopherayork/DOM-II.git"
+  },
+  "keywords": [
+    "dom2"
+  ],
+  "author": "Kitsueki <kitsueki17@gmail.com> (https://github.com/kitsueki17/NodeJS)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christopherayork/DOM-II/issues"
+  },
+  "homepage": "https://github.com/christopherayork/DOM-II#readme",
+  "dependencies": {
+    "gsap": "^2.1.3"
+  }
+}

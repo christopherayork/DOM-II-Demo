@@ -226,6 +226,11 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+input#myInput {
+  color: #212529;
+  border-radius: 5px;
+  margin: 5px 10px;
+}
 .home .intro {
   padding: 90px 0 10px;
   border-bottom: 2px dashed #C0C0C0;

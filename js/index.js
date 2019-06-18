@@ -21,7 +21,6 @@ navA.forEach(current => {
 
 const body = document.querySelector('body');
 const sandyBeach = '#FFEBCD';
-const silver = '#C0C0C0';
 const shark = '#212529';
 
 let boxes = []; // should cap at 3
@@ -53,7 +52,6 @@ function showBox(ms, str) {
     boxTimer();
 }
 
-
 [...body.children].forEach(current => {
     current.addEventListener('dblclick', event => {
         if(!body.style.backgroundColor) body.style.backgroundColor = sandyBeach;
@@ -68,8 +66,6 @@ window.addEventListener('load', event => {
 window.addEventListener('resize', event => {
     showBox(500, 'Waiting...');
 });
-
-const easternBlue = '#17A2B8';
 
 const myInput = document.querySelector('#myInput');
 myInput.addEventListener('focus', () => {

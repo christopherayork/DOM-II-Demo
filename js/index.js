@@ -53,17 +53,17 @@ function showBox(ms, str) {
 }
 
 [...body.children].forEach(current => {
-    current.addEventListener('dblclick', event => {
+    current.addEventListener('dblclick', () => {
         if(!body.style.backgroundColor) body.style.backgroundColor = sandyBeach;
         else body.style.backgroundColor = null;
     });
 });
 
-window.addEventListener('load', event => {
+window.addEventListener('load', () => {
     alert('Whole page has loaded!');
 });
 
-window.addEventListener('resize', event => {
+window.addEventListener('resize', () => {
     showBox(500, 'Waiting...');
 });
 
@@ -74,7 +74,7 @@ myInput.addEventListener('focus', () => {
 myInput.addEventListener('blur', () => {
     myInput.style.backgroundColor = null;
 });
-window.addEventListener('scroll', event => {
+window.addEventListener('scroll', () => {
     showBox(500, `Scrolled: ${window.scrollY}`);
 });
 myInput.addEventListener('keyup', event => {
